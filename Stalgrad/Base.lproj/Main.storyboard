@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="J3l-aB-bHg">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -44,15 +45,16 @@
                             <constraint firstItem="nJw-Yn-OS8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q0Z-dd-fPE"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="isl-fl-nmG"/>
                     <connections>
                         <outlet property="welcomeLabel" destination="nJw-Yn-OS8" id="wSh-Fu-cRA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-607" y="11"/>
+            <point key="canvasLocation" x="1142.0289855072465" y="10.714285714285714"/>
         </scene>
-        <!--Item 2-->
+        <!--Контакты-->
         <scene sceneID="uyb-0n-mim">
             <objects>
                 <viewController id="neY-cS-VuX" sceneMemberID="viewController">
@@ -62,13 +64,13 @@
                         <viewLayoutGuide key="safeArea" id="W56-xC-v9D"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="rbY-hx-BnJ"/>
+                    <tabBarItem key="tabBarItem" title="Контакты" image="phone.bubble.left" catalog="system" id="rbY-hx-BnJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ofa-ml-pyM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1781" y="443"/>
+            <point key="canvasLocation" x="3600.0000000000005" y="442.63392857142856"/>
         </scene>
-        <!--Item 1-->
+        <!--View Controller-->
         <scene sceneID="Mqw-w0-BrD">
             <objects>
                 <viewController id="7fJ-2W-EbO" sceneMemberID="viewController">
@@ -78,11 +80,11 @@
                         <viewLayoutGuide key="safeArea" id="rgA-Pf-Ogj"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="mrL-V2-mn1"/>
+                    <navigationItem key="navigationItem" id="ifh-wW-cZZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EBA-iH-Cgk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1780" y="-283"/>
+            <point key="canvasLocation" x="4510.144927536232" y="-283.25892857142856"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="ctG-wU-t2B">
@@ -95,16 +97,37 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="7fJ-2W-EbO" kind="relationship" relationship="viewControllers" id="h5g-gR-0iB"/>
+                        <segue destination="4NE-Ry-ta3" kind="relationship" relationship="viewControllers" id="h5g-gR-0iB"/>
                         <segue destination="neY-cS-VuX" kind="relationship" relationship="viewControllers" id="B01-9X-uAY"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2hn-53-WYW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="378" y="11"/>
+            <point key="canvasLocation" x="2197.1014492753625" y="10.714285714285714"/>
+        </scene>
+        <!--Каталог-->
+        <scene sceneID="SwG-Cs-LmI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4NE-Ry-ta3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Каталог" image="list.bullet.rectangle" catalog="system" id="mrL-V2-mn1"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="736-vd-X3Q">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7fJ-2W-EbO" kind="relationship" relationship="rootViewController" id="nOg-CG-zJw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w5B-pe-wTF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3600.0000000000005" y="-283.25892857142856"/>
         </scene>
     </scenes>
     <resources>
+        <image name="list.bullet.rectangle" catalog="system" width="128" height="93"/>
+        <image name="phone.bubble.left" catalog="system" width="128" height="110"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
