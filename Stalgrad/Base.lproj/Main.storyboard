@@ -46,7 +46,6 @@
                     </view>
                     <connections>
                         <outlet property="welcomeLabel" destination="nJw-Yn-OS8" id="wSh-Fu-cRA"/>
-                        <segue destination="J3l-aB-bHg" kind="show" identifier="toTabBar" id="FqT-BX-24N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -58,10 +57,10 @@
             <objects>
                 <viewController id="neY-cS-VuX" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oPf-Y6-dDm">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="W56-xC-v9D"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="rbY-hx-BnJ"/>
                 </viewController>
@@ -74,10 +73,10 @@
             <objects>
                 <viewController id="7fJ-2W-EbO" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ni7-gT-tvE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="rgA-Pf-Ogj"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="mrL-V2-mn1"/>
                 </viewController>
@@ -85,10 +84,10 @@
             </objects>
             <point key="canvasLocation" x="1780" y="-283"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="ctG-wU-t2B">
             <objects>
-                <tabBarController id="J3l-aB-bHg" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="vc" id="J3l-aB-bHg" customClass="TabBarViewController" customModule="Stalgrad" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Xza-oJ-tDh"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nN7-f2-UVU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -109,8 +108,11 @@
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
