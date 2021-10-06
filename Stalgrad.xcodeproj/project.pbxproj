@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B9CCA7C2706E95F005EEB7E /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9CCA7B2706E95F005EEB7E /* AboutViewController.swift */; };
+		4B9CCA7E2706E97F005EEB7E /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9CCA7D2706E97F005EEB7E /* CatalogViewController.swift */; };
+		4B9CCA802706EB5B005EEB7E /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9CCA7F2706EB5B005EEB7E /* ContactViewController.swift */; };
 		4BCC803426F4C78C008F7814 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCC803326F4C78C008F7814 /* TabBarViewController.swift */; };
 		4BDC631B26F4C127008D6FEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDC631A26F4C127008D6FEE /* AppDelegate.swift */; };
 		4BDC631D26F4C127008D6FEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDC631C26F4C127008D6FEE /* SceneDelegate.swift */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B9CCA7B2706E95F005EEB7E /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		4B9CCA7D2706E97F005EEB7E /* CatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = "<group>"; };
+		4B9CCA7F2706EB5B005EEB7E /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		4BCC803326F4C78C008F7814 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		4BDC631726F4C126008D6FEE /* Stalgrad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stalgrad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BDC631A26F4C127008D6FEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,11 +70,14 @@
 				4BDC631C26F4C127008D6FEE /* SceneDelegate.swift */,
 				4BDC631E26F4C127008D6FEE /* ViewController.swift */,
 				4BCC803326F4C78C008F7814 /* TabBarViewController.swift */,
+				4B9CCA7D2706E97F005EEB7E /* CatalogViewController.swift */,
+				4B9CCA7B2706E95F005EEB7E /* AboutViewController.swift */,
 				4BDC632026F4C127008D6FEE /* Main.storyboard */,
 				4BDC632626F4C128008D6FEE /* Assets.xcassets */,
 				4BDC632826F4C128008D6FEE /* LaunchScreen.storyboard */,
 				4BDC632B26F4C128008D6FEE /* Info.plist */,
 				4BDC632326F4C127008D6FEE /* Stalgrad.xcdatamodeld */,
+				4B9CCA7F2706EB5B005EEB7E /* ContactViewController.swift */,
 			);
 			path = Stalgrad;
 			sourceTree = "<group>";
@@ -143,6 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B9CCA7E2706E97F005EEB7E /* CatalogViewController.swift in Sources */,
+				4B9CCA802706EB5B005EEB7E /* ContactViewController.swift in Sources */,
+				4B9CCA7C2706E95F005EEB7E /* AboutViewController.swift in Sources */,
 				4BDC631F26F4C127008D6FEE /* ViewController.swift in Sources */,
 				4BDC631B26F4C127008D6FEE /* AppDelegate.swift in Sources */,
 				4BDC631D26F4C127008D6FEE /* SceneDelegate.swift in Sources */,

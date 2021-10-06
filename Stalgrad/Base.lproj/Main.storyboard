@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="J3l-aB-bHg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AYP-a0-WFv">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -54,88 +55,128 @@
             </objects>
             <point key="canvasLocation" x="1142.0289855072465" y="10.714285714285714"/>
         </scene>
-        <!--Контакты-->
-        <scene sceneID="uyb-0n-mim">
+        <!--Каталог-->
+        <scene sceneID="j1C-Ln-lwk">
             <objects>
-                <viewController id="neY-cS-VuX" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="oPf-Y6-dDm">
+                <viewController id="ndq-cn-1XJ" customClass="CatalogViewController" customModule="Stalgrad" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rZk-ej-eg4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="W56-xC-v9D"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <viewLayoutGuide key="safeArea" id="ZzT-zs-Xpp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Контакты" image="phone.bubble.left" catalog="system" id="rbY-hx-BnJ"/>
+                    <tabBarItem key="tabBarItem" title="Каталог" image="list.bullet.rectangle" catalog="system" id="ToU-LR-n8V"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ofa-ml-pyM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G3P-0S-BRt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3600.0000000000005" y="442.63392857142856"/>
+            <point key="canvasLocation" x="4593" y="50"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Mqw-w0-BrD">
+        <!--О нас-->
+        <scene sceneID="fNY-KC-9JQ">
             <objects>
-                <viewController id="7fJ-2W-EbO" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ni7-gT-tvE">
+                <viewController id="0Kp-dZ-K07" customClass="AboutViewController" customModule="Stalgrad" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qGC-Un-3bV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="rgA-Pf-Ogj"/>
-                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="О НАС" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vdd-MM-UQk">
+                                <rect key="frame" x="20" y="173" width="147" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" name="AccentColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enD-dg-pSZ">
+                                <rect key="frame" x="20" y="233" width="394" height="163"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">ООО "СтальГРАД" уже более 15 лет на рынке  металлопроката в Беларуси.  За это время предприятие  сформировало базу постоянных клиентов, с которыми они  регулярно сотрудничают.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo_2021-10-01 10.16.08" translatesAutoresizingMaskIntoConstraints="NO" id="wW3-KJ-MLA">
+                                <rect key="frame" x="-49" y="44" width="503" height="121"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Нас выбирают, потому что:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pyd-0m-ts5">
+                                <rect key="frame" x="20" y="432" width="305" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" name="AccentColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GQ6-46-BzG">
+                                <rect key="frame" x="20" y="514" width="360" height="194"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">1) мы предлагаем приемлемые  цены на продукцию 2)у нас удобное расположение  склада и офиса 3)мы даем гарантию на качество своего  товара 4)наши опытные менеджеры всегда рады  помочь и подсказать вам с выбором  </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="M9c-7X-LtB"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ifh-wW-cZZ"/>
+                    <tabBarItem key="tabBarItem" title="О нас" image="book" catalog="system" id="wfF-GV-Hmo"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EBA-iH-Cgk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zoj-3d-beM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4510.144927536232" y="-283.25892857142856"/>
+            <point key="canvasLocation" x="3698.5507246376815" y="49.553571428571423"/>
         </scene>
         <!--Tab Bar View Controller-->
-        <scene sceneID="ctG-wU-t2B">
+        <scene sceneID="1Oa-g9-fFa">
             <objects>
-                <tabBarController storyboardIdentifier="vc" id="J3l-aB-bHg" customClass="TabBarViewController" customModule="Stalgrad" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="Xza-oJ-tDh"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nN7-f2-UVU">
+                <tabBarController id="AYP-a0-WFv" customClass="TabBarViewController" customModule="Stalgrad" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KH3-kN-ZCE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="4NE-Ry-ta3" kind="relationship" relationship="viewControllers" id="h5g-gR-0iB"/>
-                        <segue destination="neY-cS-VuX" kind="relationship" relationship="viewControllers" id="B01-9X-uAY"/>
+                        <segue destination="0Kp-dZ-K07" kind="relationship" relationship="viewControllers" id="QFI-mP-YNC"/>
+                        <segue destination="ndq-cn-1XJ" kind="relationship" relationship="viewControllers" id="ZTk-x4-8um"/>
+                        <segue destination="4sD-Yw-QAA" kind="relationship" relationship="viewControllers" id="OeS-Mh-Sle"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2hn-53-WYW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gzj-1c-4Ft" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2197.1014492753625" y="10.714285714285714"/>
+            <point key="canvasLocation" x="4593" y="-902"/>
         </scene>
-        <!--Каталог-->
-        <scene sceneID="SwG-Cs-LmI">
+        <!--Контакты-->
+        <scene sceneID="kXD-bb-EKV">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4NE-Ry-ta3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Каталог" image="list.bullet.rectangle" catalog="system" id="mrL-V2-mn1"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="736-vd-X3Q">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="7fJ-2W-EbO" kind="relationship" relationship="rootViewController" id="nOg-CG-zJw"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="w5B-pe-wTF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="4sD-Yw-QAA" customClass="ContactViewController" customModule="Stalgrad" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8jb-LU-wRA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="cHq-YS-nxW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Контакты" image="phone.bubble.left" catalog="system" id="IiS-ZB-e2n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="egw-XS-vkO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3600.0000000000005" y="-283.25892857142856"/>
+            <point key="canvasLocation" x="5526" y="50"/>
         </scene>
     </scenes>
     <resources>
+        <image name="book" catalog="system" width="128" height="102"/>
         <image name="list.bullet.rectangle" catalog="system" width="128" height="93"/>
         <image name="phone.bubble.left" catalog="system" width="128" height="110"/>
+        <image name="photo_2021-10-01 10.16.08" width="1242" height="332"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
